@@ -10,13 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
     backgroundMusic.loop = true; 
 
     const quotes = [
-        "' If the most important people in this world cheat, why shouldn't I? '",
-        "' AntiSocial 4 Life '",
-        "' Paster '",
-        "' Uc Warrior '",
-        "' SetWindowsHook Abuser '",
-        "' Firox 4 Ever '",
-        "' Meow '"
+        " Paster ",
+        " Uc Warrior ",     
     ];
     let quoteIndex = 0;
     
@@ -63,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     discordLink.addEventListener('click', (e) => {
         e.preventDefault();
-        navigator.clipboard.writeText('gworld.').then(() => {
+        navigator.clipboard.writeText('clixzy_._').then(() => {
             notification.style.display = 'block';
             setTimeout(() => {
                 notification.style.opacity = '1';
@@ -78,8 +73,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function glitchText() {
-        let originalText = "[ F1R0X ]";
-        let glitchVariants = ["[ F1R0X ]", "[ FIROX ]", "[ F1ROX ]", "[ F1R0X ]", "[ F1ROX ]"];
+        let originalText = "[ Clixzy ]";
+        let glitchVariants = ["[ Clixzy ]", "[ Clixzy ]", "[ Clixzy ]", "[ Clixzy ]", "[ Clixzy ]"];
         let glitchIndex = 0;
 
         function updateText() {
