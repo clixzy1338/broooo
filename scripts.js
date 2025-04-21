@@ -10,8 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     backgroundMusic.loop = true; 
 
     const quotes = [
-        " Paster ",
-        " Uc Warrior ",     
+
     ];
     let quoteIndex = 0;
     
