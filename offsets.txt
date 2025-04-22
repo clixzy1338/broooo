@@ -1,0 +1,13 @@
+UWorld           -> 0x1782D0B8
+ProcessEvent     -> 0x2963210 (0x26)
+StaticFindObject -> 0x282B660
+PersistentLevel  -> 0x40
+Actors           -> 0x210
+ActorsCount      -> 0x218
+Levels           -> 0x1C0
+GameState        -> 0x1A8
+GameInstance     -> 0x220
+CameraLocation   -> 0x148
+CameraRotation   -> 0x158
+GNames       -> 0x17A32E40
+NamePrivate  -> 0xC
