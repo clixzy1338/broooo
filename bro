@@ -2,65 +2,6 @@
 @echo off 
 title  Made by: Chark 
 @echo off & setlocal DisableDelayedExpansion
-set counter=3
-
- goto :Sucess
-goto :2
-:LOCKOUT
-echo ACCOUNT LOCKED OUT TIMEOUT IN 5 Seconds
-timeout /t 5 Seconds
-goto :Start
-:2
-echo.
-set /a counter -=1
-echo.
-@echo on
-@echo off
-color a0
-echo INCORRECT USERNAME OR PASSWORD
-echo.
-if %counter% lss 4 echo %counter% attempts left
-pause
-goto :Start
-:Sucess
-Echo Correct Username and Password
-color 0a
-goto :mainscreen
-mode con: cols=120 lines=30
-chcp 65001 >nul
-color 1
-set version=v0.2
-set releasestatus=Official Release
-SETLOCAL EnableDelayedExpansion
-mode con: cols=120 lines=30
->nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
-if '%errorlevel%' NEQ '0' (  
-echo Requesting administrative privileges...
-echo Please click yes when prompted.
-timeout 1 >nul /nobreak
-color 4
-timeout 1 >nul /nobreak
-color 1
-timeout 1 >nul /nobreak
-color 4
-    timeout 1 >nul /nobreak
-    goto UACPrompt
-) else ( goto gotAdmin )
-:UACPrompt
-    echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
-    echo UAC.ShellExecute "%~s0", "", "", "runas", 1 >> "%temp%\getadmin.vbs"
-    "%temp%\getadmin.vbs"
-    exit /B
-:gotAdmin
-    if exist "%temp%\getadmin.vbs" ( del "%temp%\getadmin.vbs" )
-color 4
-
-
-
-
-
-:mainscreen
-
 mode 80,15
 title Chark SPOOFER ^| Made by: Chark ^| CHARK ON TOP !
 echo      [ Loading CHARK SPOOFER ]
