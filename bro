@@ -3,17 +3,8 @@
 title  Made by: Chark 
 @echo off & setlocal DisableDelayedExpansion
 set counter=3
-:Start
-if %counter% equ 0 goto :LOCKOUT
-Mode 50, 2 & color 9
-set /p input= Username:
-set "psCommand=powershell -Command "$pword = read-host 'Enter password' -AsSecureString ; ^
-    $BSTR=[System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($pword); ^
-      [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR)""
-        for /f "usebackq delims=" %%p in (`%psCommand%`) do set password=%%p
-if %input%==root (
-if %password%==chark666 goto :Sucess
-)
+
+ goto :Sucess
 goto :2
 :LOCKOUT
 echo ACCOUNT LOCKED OUT TIMEOUT IN 5 Seconds
